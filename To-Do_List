@@ -1,0 +1,42 @@
+To-Do List
+
+📝Description
+This is a simple To-Do List application built with HTML, CSS, and JavaScript. It allows users to manage their tasks with the ability to add, remove, and mark tasks as completed. Additionally, the application supports drag-and-drop functionality for reordering tasks and loading tasks from an external source via URL.
+
+🚀Features
+
+    ➕Add Tasks: Users can add tasks by typing them into an input field and pressing 'Enter' or by clicking the "Add" button.
+    ❌Remove Tasks: Each task has a "REMOVE" button to delete it from the list.
+    ✅Task Completion: Tasks can be marked as complete by checking the checkbox, which strikes through the task's text.
+    🔄Drag-and-Drop: Tasks can be reordered by dragging and dropping them.
+    🗑️Clear All Tasks: Users can clear all tasks with the "Clear" button, which removes all tasks from both the list and the local storage.
+    📂Load Tasks from URL: Users can load tasks from a remote JSON file using a URL input.
+
+📌How to Use
+
+    Add a task:
+        Type your task in the input field and press "Enter" or click the "Add" button.
+    Mark a task as completed:
+        Click the checkbox next to the task to mark it as completed (it will be struck through).
+    Remove a task:
+        Click the "REMOVE" button next to the task to delete it from the list.
+    Reorder tasks:
+        Drag and drop tasks to reorder them in the list.
+    Clear all tasks:
+        Click the "Clear" button to remove all tasks from both the DOM and the browser's storage.
+    Load tasks from a URL:
+        Enter a URL in the input field and click the "Load" button to fetch tasks from a JSON file.
+
+🛠Technologies Used
+
+    JavaScript: For the functionality of the To-Do List (adding, removing, completing tasks, etc.).
+    HTML: To structure the application.
+    CSS: To style the application (assumed but not detailed in the code provided).
+    Local Storage: To store the tasks persistently.
+    Fetch API: For loading tasks from an external JSON file.
+
+Local Storage
+
+This application uses local storage to save tasks. When a user adds a task, it is saved in the browser's local storage under the key 'tasks'. Tasks persist across page reloads.
+
+
