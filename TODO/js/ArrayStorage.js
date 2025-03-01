@@ -25,12 +25,25 @@ class ArrayStorage {
     // une methode pour supprimer une valeur du tableau
     remove(value) {
         const index = this.list.indexOf(value)
-        this.list.splice(index, 1)
-        localStorage.setItem(this.name, JSON.stringify(this.list))
+        if (index !== -1) {
+            this.list.splice(index, 1)
+            localStorage.setItem(this.name, JSON.stringify(this.list))
+        }
     }
 
     // une methode pour vider tout le tableau
     clear() {
         localStorage.removeItem(this.name)
+    }
+
+    // sauvegarde les modifications dans LocalStorage
+    save() {
+        localStorage.setItem(this.name, JSON.stringify(this.list))
+    }
+
+    // met a jour la liste entiere dans localStorage
+    update(list) {
+        this.list = list
+        this.save()
     }
 }
